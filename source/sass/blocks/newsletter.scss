@@ -1,0 +1,60 @@
+.newsletter {
+  @include gradient-image(380px, url("../../img/bg-image.png"));
+}
+
+.newsletter__wrapper {
+  padding: 80px 330px 110px;
+  text-align: center;
+}
+
+.newsletter__title {
+  display: block;
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: $text-shadow;
+}
+
+.newsletter__text {
+  display: block;
+  position: relative;
+  font-size: 15px;
+  margin-bottom: 42px;
+  color: #ffffff;
+  text-shadow: $text-shadow;
+}
+
+.newsletter__form {
+  position: relative;
+  width: 507px;
+  margin: 0 auto;
+
+  & input {
+    height: 52px;
+    padding-left: 36px;
+    font-size: 18px;
+    border: 0.5px solid #ffffff;
+    border-radius: 30px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+  }
+}
+
+.newsletter__form-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 212px;
+  height: 52px;
+  background: #ffffff;
+  color: $color-brown;
+  padding: 18px 74px;
+  
+  &:hover {
+    background: $color-brown;
+    color: #ffffff;
+  }
+}

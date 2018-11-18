@@ -1,0 +1,49 @@
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 15px;
+}
+
+.page-header__logo {
+  height: 55px;
+  //text-align: center;
+}
+
+.page-header__logo-image {
+  margin: 0 auto;
+  width: 160px;
+  height: 55px;
+}
+
+
+@media (max-width: $tablet-width) {
+  .page-header {
+    background-color: #000000;
+  }
+
+  .page-header__wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  .page-header__logo {
+    margin-bottom: 20px;
+  }
+
+  .page-header__logo-image {
+    margin: 0 auto;
+  }
+}
+@media  (max-width: $mobile-width){
+  //.page-header {
+  //  background: red;
+  //}
+  //.page-header__logo-image {
+  //  width: 140px;
+  //  height: 35px;
+  //}
+}

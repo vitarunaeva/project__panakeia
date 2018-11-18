@@ -1,0 +1,51 @@
+.page-footer {
+  position: relative;
+  display: block;
+  background: $color-orange;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.page-footer__column {
+  padding: 100px 120px;
+}
+
+.page-footer__column-link {
+  position: relative;
+  display: block;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.page-footer__image {
+  @include gradient-image(380px, url("../../img/bg-image.png"));
+}
+
+.page-footer__image-text {
+  padding-top: 90px;
+
+  & span {
+    display: block;
+    margin-bottom: 20px;
+    font-family: 'Proxima', serif;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+    
+    & a {
+      font-weight: bold;
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.main {
+  @include gradient-image(1320px, url("../../img/main-bg.jpg"));
+}
+
+.main__wrapper {
+  padding-top: 475px;
+}
+
+.main__title {
+  color: #ffffff;
+  font-weight: lighter;
+  font-size: 40px;
+  margin-bottom: 120px;
+}
+
+.main__title-contin {
+  display: block;
+  font-family: 'Roboto Slab', serif;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 10px;
+}
+

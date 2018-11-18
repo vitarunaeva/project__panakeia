@@ -1,0 +1,25 @@
+@mixin gradient-image($min-height, $image) {
+  position: relative;
+  display: block;
+  min-height: $min-height;
+  background: #000000 $image no-repeat 50%;
+  background-size: cover;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: $bg-gradient;
+  }
+  .content-position {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    align-items: center;
+  }
+
+}
